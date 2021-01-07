@@ -3,12 +3,12 @@ var pastScore = document.querySelector("#pastScore");
 var clear = document.querySelector("#clear");
 var returnLast = document.querySelector("#return");
 
-// Event listener to clear scores 
+// Event listener for clear button on scoreboard
 clear.addEventListener("click", function () {
     localStorage.clear();
     location.reload();
 });
-// Retreives local stroage 
+// Provides files saved on local storage
 var allScores = localStorage.getItem("allScores");
 allScores = JSON.parse(allScores);
 
@@ -22,7 +22,7 @@ if (allScores !== null) {
 
     }
 }
-// Event listener to move to index page
+// Event listener for return button to go to index
 returnLast.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
