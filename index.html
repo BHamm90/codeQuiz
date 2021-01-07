@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <!-- This provides a responsive window -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Link to my CSS -->
+        <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    
+        <!-- Provides webpage with a name-->
+        <title>Coding Quiz</title>
+
+    </head>
+    
+    <body>
+        <!-- Provides a link to previous scores -->
+        <a href="scoreboard.html">View Past Scores</a>
+
+        <div id="wrapper">
+
+            <!-- Timer Div / ID -->
+            <div id="countdown"></div>
+
+            <!-- Quiz / Explaination / Start -->
+            <div id="questionsDiv">
+
+                <h1>Coding Quiz</h1>
+
+                <p>Try to answer the following coding questions as quickly and accurately as possible. Be aware that for every wrong answer your score or final time will be reduced by ten. Good luck!</p>
+                
+                <ul id="choicesUl"></ul>
+                
+                <!-- Start Test Button and Begin Countdown -->
+                <button id="begin">Begin!</button>
+
+            </div>
+    
+        </div>
+    
+        <!-- Provides the test questions -->
+        <script src="test.js"></script>
+    
+    
+    </body>
+</html>
